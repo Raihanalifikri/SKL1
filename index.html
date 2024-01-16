@@ -35,7 +35,7 @@
             <a class="nav-link text-white" href="#">Features</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white href=" #">Pricing</a>
+            <a class="nav-link text-white" href=" #">Pricing</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
@@ -59,7 +59,12 @@
         <div class="banner-content text-white col-md-6">
           <h1>Welcome Cuy</h1>
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure fugit nulla expedita!</p>
-          <button class="btn btn-outline-primary p-10">Show More</button>
+          <button class="learn-more">
+            <span class="circle" aria-hidden="true">
+              <span class="icon arrow"></span>
+            </span>
+            <span class="button-text">Learn More</span>
+          </button>
         </div>
         <div class="col-md-6 ">
           <img src="jamhome.png" alt="" width="400px
@@ -303,30 +308,314 @@
   </div>
   <!-- END -->
   <!-- Clock -->
-  <div class="container-fluid gx-0 clock" style="height: 100vh;">
+  <div class="container-fluid clock" style="height: 100%;">
     <div class="row">
-      <div class="col-md-6">
-        <div class="clock-content ">
+      <div class="col-md-6 ">
+        <div class="clock-content d-flex justify-content-center">
           <div class="card1">
             <div class="card2">
-              <h1>CLOCK</h1>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda id repudiandae, nisi reiciendis
+              <h1 class="ms-2">CLOCK</h1>
+              <p class="ms-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda id repudiandae, nisi
+                reiciendis
                 commodi iste quaerat atque minima beatae laudantium earum officiis facilis, at eum sunt veritatis
                 nostrum sapiente quas.</p>
+              <button class="click ms-2">
+                Hover me
+              </button>
             </div>
+
           </div>
         </div>
       </div>
     </div>
-    <!-- End Clock -->
+  </div>
+  <!-- End Clock -->
 
 
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
+
+  <!-- Tampilan  -->
+  <div class="container mt-5" style="height: 100%;">
+    <div class="row justify-content-center image">
+      <div class="col-md-4 ">
+        <div class="card">
+          <img src="jam 1.png" alt="" class="img-fluid" style="height:426px;">
+        </div>
+      </div>
+      <div class="col-md-2 gx-0">
+        <div class="card">
+          <img src="jam 2 bawah.png" alt="" class="img-fluid">
+          <img src="jam 2.png" alt="" class="img-fluid mt-2">
+        </div>
+      </div>
+      <div class="col-md-3 d-flex justify-content-center gx-0">
+        <img src="jam 3.png" alt="" class="img-fluid" style="height: 426px;">
+      </div>
+      <div class="col-md-3 bg-black text-white ps-3">
+        <h1 style="text-decoration: underline rgb(71, 71, 79);">Watches</h1>
+        <p class="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat dignissimos rerum voluptatem. Alias maiores accusamus nulla deleniti, a nostrum vero non optio placeat iure porro. Aliquid cupiditate quaerat eius quae?</p>
+        <button class="cta bg-white">
+          <span class="hover-underline-animation"> Shop now </span>
+          <svg
+            id="arrow-horizontal"
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="10"
+            viewBox="0 0 46 16"
+          >
+            <path
+              id="Path_10"
+              data-name="Path 10"
+              d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+              transform="translate(30)"
+            ></path>
+          </svg>
+        </button>
+        
+      </div>
+    </div>
+  </div>
+  <!-- end Tampilan -->
+
+
+  <!-- Best  -->
+  <div class="container-fluid est" style="height: 100%;">
+    <div class="text-content mt-5" data-aos="fade-down" data-aos-duration="2000">
+      <h1 class="text-center" style="text-decoration: underline black;">BEST SELLER</h1>
+      
+    </div>
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators visually-hidden">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row justify-content-center">
+            <div class="card col-md-4 mx-5 jam" style="width: 17rem;">
+              <img src="jamhome.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-center">Card title</h5>
+                <p class="card-text text-center mt-4 mb-3">Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+                <!-- Button -->
+                <div class="btn">
+                  <button class="cssbuttons-io-button">
+                    Get started
+                    <div class="icon">
+                      <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                          fill="currentColor"></path>
+                      </svg>
+                    </div>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="card col-md-4 mx-5 jam" style="width: 17rem;">
+              <img src="jamhome.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-center">Card title</h5>
+                <p class="card-text text-center mt-4 mb-3">Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+                <!-- Button -->
+                <div class="btn">
+                  <button class="cssbuttons-io-button">
+                    Get started
+                    <div class="icon">
+                      <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                          fill="currentColor"></path>
+                      </svg>
+                    </div>
+                  </button>
+                </div>
+
+              </div>
+            </div>
+            <div class="card col-md-4 mx-5 jam" style="width: 17rem;">
+              <img src="jamhome.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-center">Card title</h5>
+                <p class="card-text text-center mt-4 mb-3">Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+                <!-- Button -->
+                <div class="btn">
+                  <button class="cssbuttons-io-button">
+                    Get started
+                    <div class="icon">
+                      <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                          fill="currentColor"></path>
+                      </svg>
+                    </div>
+                  </button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row justify-content-center">
+            <div class="card col-md-4 mx-5 jam" style="width: 17rem;">
+              <img src="jamhome.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-center">Card title</h5>
+                <p class="card-text text-center mt-4 mb-3">Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+                <!-- Button -->
+                <div class="btn">
+                  <button class="cssbuttons-io-button">
+                    Get started
+                    <div class="icon">
+                      <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                          fill="currentColor"></path>
+                      </svg>
+                    </div>
+                  </button>
+                </div>
+
+              </div>
+            </div>
+            <div class="card col-md-4 mx-5 jam" style="width: 17rem;">
+              <img src="jamhome.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-center">Card title</h5>
+                <p class="card-text text-center mt-4 mb-3">Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+                <!-- Button -->
+                <div class="btn">
+                  <button class="cssbuttons-io-button">
+                    Get started
+                    <div class="icon">
+                      <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                          fill="currentColor"></path>
+                      </svg>
+                    </div>
+                  </button>
+                </div>
+
+              </div>
+            </div>
+            <div class="card col-md-4 mx-5 jam" style="width: 17rem;">
+              <img src="jamhome.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-center">Card title</h5>
+                <p class="card-text text-center mt-4 mb-3">Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+                <!-- Button -->
+                <div class="btn">
+                  <button class="cssbuttons-io-button">
+                    Get started
+                    <div class="icon">
+                      <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                          fill="currentColor"></path>
+                      </svg>
+                    </div>
+                  </button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row justify-content-center">
+            <div class="card col-md-4 mx-5 jam" style="width: 17rem;">
+              <img src="jamhome.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-center">Card title</h5>
+                <p class="card-text text-center mt-4 mb-3">Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+                <!-- Button -->
+                <div class="btn">
+                  <button class="cssbuttons-io-button">
+                    Get started
+                    <div class="icon">
+                      <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                          fill="currentColor"></path>
+                      </svg>
+                    </div>
+                  </button>
+                </div>
+
+              </div>
+            </div>
+            <div class="card col-md-4 mx-5 jam" style="width: 17rem;">
+              <img src="jamhome.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-center">Card title</h5>
+                <p class="card-text text-center mt-4 mb-3">Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+                <!-- Button -->
+                <div class="btn">
+                  <button class="cssbuttons-io-button">
+                    Get started
+                    <div class="icon">
+                      <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                          fill="currentColor"></path>
+                      </svg>
+                    </div>
+                  </button>
+                </div>
+
+              </div>
+            </div>
+            <div class="card col-md-4 mx-5 jam" style="width: 17rem;">
+              <img src="jamhome.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-center">Card title</h5>
+                <p class="card-text text-center mt-4 mb-3">Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+                <!-- Button -->
+                <div class="btn">
+                  <button class="cssbuttons-io-button">
+                    Get started
+                    <div class="icon">
+                      <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                          fill="currentColor"></path>
+                      </svg>
+                    </div>
+                  </button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true" style="background-color: black !important;"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <!-- End Best -->
+
+
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
